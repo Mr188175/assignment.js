@@ -39,7 +39,7 @@ function brickCalculator(floor) {
     if(i > 10 && i <= 20) {
       totalHeight = totalHeight + 12;
     }
-    if(i > 20) {
+    if(i > 20 && i <= 45) {
       totalHeight = totalHeight + 12;
     }
   }
@@ -48,6 +48,7 @@ function brickCalculator(floor) {
 }
 console.log(brickCalculator(17));
 console.log(brickCalculator(24));
+console.log(brickCalculator(50));
 
 // Assignment brickCalculator end
 
