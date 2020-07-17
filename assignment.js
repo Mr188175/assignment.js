@@ -29,17 +29,38 @@ console.log(totalWood);
 
 
 // Assignment brickCalculator start
+function brickCalculator(floor) {
+    var totalHeight = 0;
+    var totalBricks = 0;
+  for(var i = 1; i <= floor; i++) {
+    if(i <= 10) {
+      totalHeight = totalHeight + 15;
+    }
+    if(i > 10 && i <= 20) {
+      totalHeight = totalHeight + 12;
+    }
+  }
+  totalBricks = totalHeight * 1000;
+  return totalBricks;
+}
+
+console.log(brickCalculator(17));
+
+
+
+
+
+
 
 
 
 // Assignment brickCalculator end
 
-
-
 // Assignment tinyFriend start
- function tinyFriend(name) {
+ 
+function tinyFriend(name) {
      var lowest = name[0];
-     for (var i =0; i < name.length; i++) {
+     for (var i = 0; i < name.length; i++) {
          var currentName = name[i];
          if (currentName < lowest) {
              lowest = currentName;
@@ -48,9 +69,10 @@ console.log(totalWood);
      return lowest;
  }
 
- var lowestName = tinyFriend(['shawon', 'shahadat', 'robin', 'anu', 'anup']);
+ var lowestName = tinyFriend(['shawon', 'shahadat', 'robin', 'anup', 'anu']);
  console.log(lowestName);
-// Assignment tinyFriend end
+ 
+ // Assignment tinyFriend end
 
 
 
