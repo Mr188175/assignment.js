@@ -39,22 +39,18 @@ function brickCalculator(floor) {
     if(i > 10 && i <= 20) {
       totalHeight = totalHeight + 12;
     }
+    if(i > 20) {
+      totalHeight = totalHeight + 12;
+    }
   }
   totalBricks = totalHeight * 1000;
   return totalBricks;
 }
-
 console.log(brickCalculator(17));
-
-
-
-
-
-
-
-
+console.log(brickCalculator(24));
 
 // Assignment brickCalculator end
+
 
 // Assignment tinyFriend start
  
