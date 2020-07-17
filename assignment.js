@@ -54,22 +54,18 @@ console.log(brickCalculator(24));
 
 
 // Assignment tinyFriend start
- 
-function tinyFriend(name) {
-     var lowest = name[0];
-     for (var i = 0; i < name.length; i++) {
-         var currentName = name[i];
-         if (currentName < lowest) {
-             lowest = currentName;
-         }
-     }
-     return lowest;
- }
 
- var lowestName = tinyFriend(['shawon', 'shahadat', 'robin', 'anup', 'anu']);
- console.log(lowestName);
- 
- // Assignment tinyFriend end
+function tinyFriend(name) {
+  var arr = name;
+  arr = ["shaown", "shahadat", "opu", "kiron", "anup"];
+  return arr.reduce((a, b) => a.length <= b.length ? a : b);
+}
+
+console.log(tinyFriend());
+
+// Assignment tinyFriend end
+
+
 
 
 
