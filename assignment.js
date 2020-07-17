@@ -25,9 +25,32 @@ function woodCalculator(chair,table,bed) {
 var totalWood = woodCalculator(10,5,2);
 console.log(totalWood);
 
+// Assignment woodCalculator end
+
+
+// Assignment brickCalculator start
 
 
 
+// Assignment brickCalculator end
+
+
+
+// Assignment tinyFriend start
+ function tinyFriend(name) {
+     var lowest = name[0];
+     for (var i =0; i < name.length; i++) {
+         var currentName = name[i];
+         if (currentName < lowest) {
+             lowest = currentName;
+         }
+     }
+     return lowest;
+ }
+
+ var lowestName = tinyFriend(['shawon', 'shahadat', 'robin', 'anu', 'anup']);
+ console.log(lowestName);
+// Assignment tinyFriend end
 
 
 
